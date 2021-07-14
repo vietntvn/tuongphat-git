@@ -2,3 +2,231 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+body{
+    font-size: 0.875rem;
+    color: $color-tp-4;
+}
+
+//header
+header{
+    font-family: 'Oswald';
+    .navbar-nav {
+        .nav-link,.navbar-tool-text {
+            text-transform: uppercase;
+            color: #fff !important;
+            &:hover {
+                color: rgba(255, 255, 255, 0.65) !important;
+            }
+            > i{
+                color: inherit !important;
+            }
+        }
+    }
+    .navbar-tool-text {
+        text-transform: uppercase;
+        color: #fff !important;
+        &:hover {
+            color: rgba(255, 255, 255, 0.65) !important;
+        }
+    }
+    .navbar-tool {
+        .dropdown-toggle {
+            i{
+                color: #fff;
+                font-size: 1.0625rem;
+            }
+            &:hover{
+                color: rgba(255, 255, 255, 0.65);
+            }
+            &::after{
+                display: none !important;
+            }
+        }
+        .navbar-tool-label {
+            width: 1rem;
+            height: 1rem;
+            line-height: 1rem;
+            font-size: 0.6rem;
+            top: -0.35rem;
+            right: -0.6875rem;
+        }
+    }
+}
+
+.dropdown {
+    .navbar-tool-text{
+        &:after{
+            display: none;
+        }
+    }
+}
+
+h1,h2,h2,h3,h4,h5,h6,button {
+    font-family: 'Oswald';
+}
+
+.ftf-oswald{
+    font-family: 'Oswald';
+}
+
+h1{font-size: 3rem;}
+h2{font-size: 2.25rem;}
+
+a.text-white{
+    &:hover{
+        color: rgba(255, 255, 255, 0.65) !important;    
+    }
+}
+
+a.text-color-tp-1{
+    &:hover{
+        opacity: .65;
+    }
+}
+a.text-color-tp-3{
+    &:hover{
+        opacity: .65;
+    }
+}
+
+.btn-outline-danger{
+    background-color: #fff;
+}
+
+.ipt-spinner{
+    .form-control{
+        border-left: 0;
+        border-right: 0;
+    }
+    .btn-minus{
+        border-right: 0;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding: 0 .375rem;
+        font-size: 1.8rem;
+        background-color: #fff;
+    }
+    .btn-plus{
+        border-left: 0;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 0 .375rem;
+        font-size: 1.8rem;
+        background-color: #fff;
+    }    
+}
+
+.link-default{
+    color: $color-tp-4;
+    &:hover{
+        color: $color-tp-1;
+    }
+}
+
+.let-space-10{
+    letter-spacing: 0.063rem;
+}
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url(../img/bg.svg);
+    background-repeat: repeat;
+}
+
+
+.border-pt{
+    border: 2px solid $color-tp-1;
+}
+
+.bg-decoration {
+    position: absolute;
+    width: 740px;
+    height: 460px;
+    border-radius: 20px;
+    background-color: $color-tp-5;
+    left: 190px;
+    top: 40px;
+    display: none;
+}
+.zindex-1{
+    z-index: 1;
+}
+.zindex-2{
+    z-index: 2;
+}
+
+
+.btn-video{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $color-tp-1;
+    &::before{
+        font-size: 1.65rem;
+        position: relative;
+        right: -3px;
+    }
+}
+
+.rotate-180{
+    transform: rotate(180deg);
+}
+
+.text-center-rs{
+    text-align: center;
+}
+
+// Responsive
+@media (min-width: 768px) {
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding-right: .725rem;
+        padding-left: .725rem;
+    }
+
+    .navbar{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        .navbar-toolbar {
+            padding-right: .725rem;
+        }
+    }
+    
+    .p-top{
+        position: relative;
+        top: -2.5rem;
+    }
+
+    .text-center-rs{
+        text-align: left;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .bg-decoration {
+        display: block;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding-right: 1.725rem;
+        padding-left: 1.725rem;
+    }
+
+    header{
+        .navbar-toolbar {
+            padding-right: 1.725rem;
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .itm-{
+        h4{
+            font-size: 1rem;
+            margin-top: 1.5rem;
+        }
+    }
+    h1{font-size: 2rem;}
+    h2{font-size: 1.25rem;}
+}

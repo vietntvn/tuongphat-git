@@ -39,7 +39,7 @@ $color-tp-1:                #F0BF0B !default;
 $color-tp-2:                #BC672E !default;
 $color-tp-3:                #655555 !default;
 $color-tp-4:                #333333 !default;
-$color-tp-5:                #f7e6d5 !default;
+$color-tp-5:                #f8f4ea !default;
 
 // Adding new color to default Bootstrap's $theme-colors map
 $theme-colors: (
@@ -56,6 +56,7 @@ $theme-colors: (
   "color-tp-3": $color-tp-3,  
   "color-tp-4": $color-tp-4,  
   "color-tp-5": $color-tp-5,
+  "gray-400":  $gray-400,  
   "dark":       $dark
 ) !default;
 
@@ -73,6 +74,7 @@ $theme-faded-colors: (
   "color-tp-3": rgba($color-tp-3, .09),
   "color-tp-4": rgba($color-tp-4, .09),
   "color-tp-5": rgba($color-tp-5, .09),
+  "gray-400":   rgba($gray-400, .09),  
   "dark":       rgba($dark, .09)
 ) !default;
 
@@ -116,7 +118,7 @@ $list-style-color:      $accent !default;
 
 // Links
 
-$link-color:              $primary !default;
+$link-color:              $color-tp-4 !default;
 $link-decoration:         none !default;
 $link-hover-color:        darken($link-color, 10%) !default;
 $link-hover-decoration:   none !default;
@@ -187,9 +189,11 @@ $component-active-bg:         $primary !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$path-to-fonts:               'https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap' !default;
+// $path-to-fonts:               'https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap' !default;
+$path-to-fonts:               'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Oswald:wght@200;300;400;500;600;700&display=swap' !default;
 
-$font-family-sans-serif:      'Rubik', sans-serif !default;
+
+$font-family-sans-serif:      'Open Sans', sans-serif !default;
 $headings-color:              $gray-800 !default;
 
 $font-size-base:              1rem !default;
