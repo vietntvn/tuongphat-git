@@ -171,8 +171,88 @@ a.text-color-tp-3{
     transform: rotate(180deg);
 }
 
+.rotate-270{
+    transform: rotate(270deg);
+}
+
 .text-center-rs{
     text-align: center;
+}
+
+.scale-effect {
+    transition: transform .25s ease-in;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.position-initial{
+    position: initial !important;
+}
+
+.mdl-support{
+    position: fixed;
+    right: 15px;
+    bottom: 53px;
+    z-index: 1025;
+    .btn-scroll-top {
+        background-color: $primary;
+        > .btn-scroll-top-icon{
+            font-weight: normal;
+            font-size: 1.4rem;
+        }
+        &:hover{
+            background-color: $danger;
+        }
+    }
+}
+
+.border-color-tp-1{
+    border: 1px solid $color-tp-1;
+}
+
+// .rounded-4{
+//     border-radius: 1.3rem;
+// }
+
+.rounded-5{
+    border-radius: 1rem;
+}
+
+.nav-pills {
+    .nav-link{
+        background-color: #fff;
+        color: $color-tp-4;
+    }
+}
+
+.curver-image{
+    height: 79px;
+    .img-second{
+        transform: scaleX(-1);
+    }
+}
+
+.nav-pt{
+    .nav-item{
+        a{
+            font-size: 	0.9375rem;
+            padding-left: 0;
+            color: $color-tp-3;
+            &:hover{
+                color: $color-tp-1;
+            }
+        }
+        .active{
+            color: $color-tp-1;
+        }
+    }
+}
+
+.bg-over{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(254,254,254,0) 100%);
+    z-index: 2;
+    position: relative;
 }
 
 // Responsive
@@ -192,11 +272,32 @@ a.text-color-tp-3{
     
     .p-top{
         position: relative;
-        top: -2.5rem;
+        top: -3.2rem;
     }
 
     .text-center-rs{
         text-align: left;
+    }
+
+    .mdl-support{
+        right: 20px;
+        bottom: 66px;
+    }
+
+    .mar-rp{
+        position: relative;
+        top: -5px;
+    }
+
+    .nav-pt{
+        .nav-item{
+            a{
+                letter-spacing: 0.063rem;
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                padding-right: 1.875rem;
+            }
+        }
     }
 }
 
@@ -229,4 +330,22 @@ a.text-color-tp-3{
     }
     h1{font-size: 2rem;}
     h2{font-size: 1.25rem;}
+    .nav-pills {
+        margin-top: 0.9375rem;
+        .nav-link{
+            padding: 0.75rem 1.05rem;
+        }
+    }
+    .ipt-spinner{
+        .form-control{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .btn-minus,.btn-plus{
+            min-width: auto !important;
+        }
+    }
+    .background-rp{
+        background-image: none !important;
+    }
 }
